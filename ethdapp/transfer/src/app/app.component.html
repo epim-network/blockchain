@@ -1,0 +1,33 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    <!-- Welcome to {{title}}! -->
+  </h1>
+</div>
+<form>
+  <div class="container">
+    <div>
+      <b>Address:</b>{{transferFrom}} <span class="tab-right">
+      <b>Balance:</b>{{balance}}</span>
+    </div>
+
+    <hr>
+
+    <label for="transfer"><b>Tranfer To1</b></label>
+    <input type="text" class="inputfield" placeholder="Tranfer To1"  [(ngModel)]="transferTo1" name="transferTo1" required>
+    <label for="transfer"><b>Tranfer To2</b></label>
+    <input type="text" class="inputfield" placeholder="Tranfer To2"  [(ngModel)]="transferTo2" name="transferTo2" required>
+    <label for="transfer"><b>Tranfer To3</b></label>
+    <input type="text" class="inputfield" placeholder="Tranfer To3"  [(ngModel)]="transferTo3" name="transferTo3" required>
+
+    <label for="amount"><b>Amount in Ether</b></label>
+    <input type="text"  class="inputfield" placeholder="Enter Amount"  [(ngModel)]="amount" name="amount" required>
+
+    <label for="remarks"><b>Remarks</b></label>
+    <textarea  class="inputfield" placeholder="Enter Remarks" name="remarks" required   [(ngModel)]="remarks" ></textarea>
+    <hr>
+    <button type="reset" class="trfbtn resetbtn">Reset</button>&nbsp;&nbsp;
+    <button type="submit" class="trfbtn" (click)="transferEther($event)">Transfer Ether</button>&nbsp;&nbsp;
+  </div>
+
+</form>

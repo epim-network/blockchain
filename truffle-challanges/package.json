@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "pet-shop": "lite-server --baseDir='src/27_dapp_pet_shop'",
+    "test": "truffle test",
+    "linter": "solium -d ."
+  },
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "ethereumjs-wallet": "^0.6.0",
+    "lite-server": "^2.4.0",
+    "truffle-hdwallet-provider": "0.0.3",
+    "zeppelin-solidity": "^1.10.0"
+  },
+  "devDependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^2.0.2",
+    "solium": "^1.1.8",
+    "truffle": "^4.1.13"
+  }
+}
